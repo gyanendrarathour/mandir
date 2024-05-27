@@ -13,7 +13,7 @@ class _MandirListViewState extends State<MandirListView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('List of Mandir'),
+        title: const Text('Select Mandir'),
         centerTitle: true,
       ),
       body: ListView.builder(

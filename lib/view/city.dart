@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:mandir/view/city.dart';
 import 'package:mandir/view/mandirListView.dart';
 
-class Homeview extends StatefulWidget {
-  const Homeview({super.key});
+class City extends StatefulWidget {
+  const City({super.key});
 
   @override
-  State<Homeview> createState() => _HomeviewState();
+  State<City> createState() => _CityState();
 }
 
-class _HomeviewState extends State<Homeview> {
+class _CityState extends State<City> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: const Text('Select City'), centerTitle: true,),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: GridView.count(
@@ -22,7 +22,7 @@ class _HomeviewState extends State<Homeview> {
           children: [
             GestureDetector(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const City()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const MandirListView()));
               },
               child: Card(
                 elevation: 10,
@@ -43,7 +43,7 @@ class _HomeviewState extends State<Homeview> {
                     ),
                     child: const Center(
                         child: Text(
-                      'Uttar Pradesh',
+                      'Mathura',
                       textAlign: TextAlign.center,
                       style: TextStyle(fontSize: 18, color: Colors.white),
                     )),
