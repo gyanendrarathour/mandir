@@ -106,8 +106,10 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                       child: const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'LOCATION:',
@@ -115,10 +117,13 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                                       fontSize: 20, fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
-                                  width: 10,
+                                  height: 10,
                                 ),
                                 Text(
-                                  'Vrandawan Road near bus stand',
+                                  'Vrandawan Road near bus stand Vrandawan Road near bus stand Vrandawan Road near bus stand',
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 20,
+                                  softWrap: true,
                                   style: TextStyle(fontSize: 17),
                                 ),
                               ],
@@ -126,6 +131,7 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                             SizedBox(
                               height: 10,
                             ),
+                            Divider(),
                             Row(
                               children: [
                                 Text(
@@ -145,6 +151,7 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                             SizedBox(
                               height: 10,
                             ),
+                            Divider(),
                             Row(
                               children: [
                                 Text(
@@ -164,6 +171,7 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                             SizedBox(
                               height: 10,
                             ),
+                            Divider(),
                             Row(
                               children: [
                                 Text(
@@ -183,7 +191,9 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                             SizedBox(
                               height: 10,
                             ),
-                            Row(
+                            Divider(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'NEAREST BUS STAND:',
@@ -191,10 +201,13 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                                       fontSize: 20, fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
-                                  width: 10,
+                                  height: 10,
                                 ),
                                 Text(
                                   'Mathura Bus Stand',
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 20,
+                                  softWrap: true,
                                   style: TextStyle(fontSize: 17),
                                 ),
                               ],
@@ -202,7 +215,9 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                             SizedBox(
                               height: 10,
                             ),
-                            Row(
+                            Divider(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   'RAILWAY STATION:',
@@ -210,10 +225,13 @@ class _MandirDetailsViewState extends State<MandirDetailsView> {
                                       fontSize: 20, fontWeight: FontWeight.bold),
                                 ),
                                 SizedBox(
-                                  width: 10,
+                                  height: 10,
                                 ),
                                 Text(
                                   'Mathura Railway Stations',
+                                  overflow: TextOverflow.ellipsis,
+                                  maxLines: 20,
+                                  softWrap: true,
                                   style: TextStyle(fontSize: 17),
                                 ),
                               ],
